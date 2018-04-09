@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MatCheckboxModule } from '@angular/material';
+import { environment } from '../environments/environment';
 
 @Component({
   selector: 'app-root',
@@ -9,4 +9,5 @@ import { MatCheckboxModule } from '@angular/material';
 
 export class AppComponent {
   title = 'ianridsdill.ca';
+  environment = environment;
 }
