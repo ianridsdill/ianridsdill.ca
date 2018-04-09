@@ -1,30 +1,33 @@
-<div class="splash">
-      <div name="trollface">
-              <img class="splash-image" src="img/Trollface.svg" />
-      </div>
-      <marquee behavior="scroll" direction="left">
-        This site is not hacked. Just my idea of a silly joke. Under construction, blah blah. Winners don't use drugs... or the marquee tag. 
-      </marquee>
-      <div class="otherStuff">
+<div>
+      <marquee behavior="scroll" direction="left">Winners don't use drugs... or the marquee tag.</marquee>
+      <div>
           <p>
             new and improved! now built on <a target="_blank" href="https://angular.io/">Angular</a>.
             see gitlab project <a target="_blank" href="https://gitlab.com/ianridsdill/ianridsdill.ca">here</a>.
           </p>
 
-          <p>Here's some random stuff I'd like to include some way in this page:</p>
+          <div *ngIf="!environment.production">
+              <p>Here's some random stuff I'd like to include some way in this page:</p>
 
-          <ul>
-            <li>angular + redux</li>
-            <li>angular material for UI controls</li>
-            <li>web sockets / SignalR</li>
-            <li>mongodb</li>
-            <li>mysql</li>
-            <li>nodejs</li>
-            <li>django?</li>
-            <li>Rails (RoR)</li>
-            <li>React</li>
-            <li>.NET</li>
-          </ul>
+              <ul>
+                <li>angular + redux</li>
+                <li>
+                  <div>
+                      <mat-checkbox>angular material for UI controls</mat-checkbox>
+                  </div>
+                  
+                </li>
+                <li>web sockets / SignalR</li>
+                <li>mongodb</li>
+                <li>mysql</li>
+                <li>nodejs</li>
+                <li>django?</li>
+                <li>Rails (RoR)</li>
+                <li>React</li>
+                <li>.NET</li>
+              </ul>
+          </div>
+          
       </div>
 </div>
 
