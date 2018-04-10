@@ -1,8 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { MatCheckboxModule } from '@angular/material';
-import { FlexLayoutModule } from '@angular/flex-layout';
-
+import { MatGridListModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 
@@ -12,8 +10,7 @@ import { AppComponent } from './app.component';
   ],
   imports: [
     BrowserModule,
-    MatCheckboxModule,
-    FlexLayoutModule
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
