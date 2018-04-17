@@ -1,22 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "~@angular/material/prebuilt-themes/purple-green.css";
-
-body {
-    overflow: hidden;
-    height: 100%;
-}
-
-div[name="trollface"] {
-    -webkit-animation: name 4s infinite linear
-}
-
-@-webkit-keyframes name {
-    0% {
-            -webkit-transform: rotate(0deg);
-    }
-
-    100% {
-            -webkit-transform: rotate(360deg);
-    }
-}
+@import "assets/css/components/holy-grail.css";
