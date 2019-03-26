@@ -16,8 +16,9 @@
   }
   .HolyGrail-content {
     flex: 1;
+    background-image: url(../../images/greyzz/greyzz.png);
   }
-  .HolyGrail-nav, .HolyGrail-ads {
+  .HolyGrail-ads {
     /* 12em is the width of the columns */
     flex: 0 0 12em;
     padding: 1em;
