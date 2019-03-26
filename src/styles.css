@@ -16,3 +16,17 @@
          url('assets/fonts/Jura/jura-v10-latin/jura-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
          url('assets/fonts/Jura/jura-v10-latin/jura-v10-latin-regular.svg#Jura') format('svg'); /* Legacy iOS */
   }
+
+  /* open-sans-regular - latin */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('assets/fonts/OpenSans/open-sans-v15-latin/open-sans-v15-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local('Open Sans Regular'), local('OpenSans-Regular'),
+         url('assets/fonts/OpenSans/open-sans-v15-latin/open-sans-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('assets/fonts/OpenSans/open-sans-v15-latin/open-sans-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('assets/fonts/OpenSans/open-sans-v15-latin/open-sans-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('assets/fonts/OpenSans/open-sans-v15-latin/open-sans-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('assets/fonts/OpenSans/open-sans-v15-latin/open-sans-v15-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+  }
