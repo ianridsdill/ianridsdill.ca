@@ -3,22 +3,8 @@
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 @import "assets/css/components/holy-grail.css";
 
-/* jura-regular - latin */
-@font-face {
-    font-family: 'Jura';
-    font-style: normal;
-    font-weight: 400;
-    src: url('assets/fonts/Jura/jura-v10-latin/jura-v10-latin-regular.eot'); /* IE9 Compat Modes */
-    src: local('Jura Regular'), local('Jura-Regular'),
-         url('assets/fonts/Jura/jura-v10-latin/jura-v10-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('assets/fonts/Jura/jura-v10-latin/jura-v10-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('assets/fonts/Jura/jura-v10-latin/jura-v10-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('assets/fonts/Jura/jura-v10-latin/jura-v10-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('assets/fonts/Jura/jura-v10-latin/jura-v10-latin-regular.svg#Jura') format('svg'); /* Legacy iOS */
-  }
-
   /* open-sans-regular - latin */
-@font-face {
+  @font-face {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -96,6 +82,8 @@ a#pdf:hover { background: #222; }
 .skills-list li span { font-size: 152%; display: block; margin-bottom: -2px; padding: 0 }
 .talent { width: 32%; float: left }
 .talent h2 { margin-bottom: 6px; }
+.talentLink { color: #444; text-decoration: none;}
+.talentLink:hover { text-decoration: underline; };
 
 #srt-ttab { margin-bottom: 100px; text-align: center;  }
 #srt-ttab img.last { margin-top: 20px }
@@ -103,5 +91,13 @@ a#pdf:hover { background: #222; }
 /* --// override to force 1/8th width grids -- */
 .yui-gf .yui-u{width:80.2%;}
 .yui-gf div.first{width:12.3%;}
+
+
+
+.linkIcons img {
+  height: 20px;
+  margin-right: 10px;
+  margin-top: 5px;
+}
 
 
