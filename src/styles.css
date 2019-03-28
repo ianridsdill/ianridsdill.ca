@@ -82,6 +82,7 @@ a#pdf:hover { background: #222; }
 .skills-list li span { font-size: 152%; display: block; margin-bottom: -2px; padding: 0 }
 .talent { width: 32%; float: left }
 .talent h2 { margin-bottom: 6px; }
+
 .talentLink { color: #444; text-decoration: none;}
 .talentLink:hover { text-decoration: underline; };
 
@@ -91,8 +92,6 @@ a#pdf:hover { background: #222; }
 /* --// override to force 1/8th width grids -- */
 .yui-gf .yui-u{width:80.2%;}
 .yui-gf div.first{width:12.3%;}
-
-
 
 .linkIcons img {
   height: 20px;
