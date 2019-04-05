@@ -4,10 +4,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatGridListModule, MatTabsModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
