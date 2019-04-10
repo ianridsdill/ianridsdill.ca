@@ -1,0 +1,19 @@
+image: node:latest
+
+cache:
+  key: ${CI_COMMIT_REF_SLUG}
+  paths:
+    - node_modules/
+
+stages:
+    - build
+
+build_stage:
+  stage: build
+  script:
+    - node_modules/.bin/ng build --prod --aot
+    
+artifacts:
+    name: "project-$CI_COMMIT_REF_NAME"
+    paths:
+      - dist/
