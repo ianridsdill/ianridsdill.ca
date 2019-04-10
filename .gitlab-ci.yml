@@ -12,8 +12,7 @@ build_stage:
   stage: build
   script:
     - node_modules/.bin/ng build --prod --aot
-    
-artifacts:
+  artifacts:
     name: "project-$CI_COMMIT_REF_NAME"
     paths:
       - dist/
