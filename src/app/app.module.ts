@@ -22,6 +22,8 @@ import { BlogComponent } from './blog/blog.component';
   ],
   exports: [
     CommonModule,
+    MatGridListModule,
+    MatTabsModule,
     MatListModule
   ],
   providers: [],
