@@ -1,7 +1,8 @@
+import { CommonModule } from '@angular/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatGridListModule, MatTabsModule } from '@angular/material';
+import { MatGridListModule, MatTabsModule, MatListModule } from '@angular/material';
 
 import { AppComponent } from './app.component';
 import { BlogComponent } from './blog/blog.component';
@@ -12,10 +13,16 @@ import { BlogComponent } from './blog/blog.component';
     BlogComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     BrowserAnimationsModule,
     MatGridListModule,
-    MatTabsModule
+    MatTabsModule,
+    MatListModule
+  ],
+  exports: [
+    CommonModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
