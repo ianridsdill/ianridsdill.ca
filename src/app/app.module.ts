@@ -1,33 +1,22 @@
-import { CommonModule } from '@angular/common';
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatGridListModule, MatTabsModule, MatListModule } from '@angular/material';
+import { BrowserModule } from '@angular/platform-browser';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BlogComponent } from './blog/blog.component';
+import { CurrentSiteComponent } from './current-site/current-site.component';
+import { OldSiteComponent } from './old-site/old-site.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BlogComponent
+    CurrentSiteComponent,
+    OldSiteComponent
   ],
   imports: [
-    CommonModule,
     BrowserModule,
-    BrowserAnimationsModule,
-    MatGridListModule,
-    MatTabsModule,
-    MatListModule
-  ],
-  exports: [
-    CommonModule,
-    MatGridListModule,
-    MatTabsModule,
-    MatListModule
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-
 export class AppModule { }
