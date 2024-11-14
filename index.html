@@ -6,8 +6,7 @@
   <title>ianridsdill.ca</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
   <style>
     body {
@@ -19,10 +18,24 @@
       text-align: center;
     }
 
-    
+
+    .link {
+      color: #ffffff;
+    }
+
+    .link:hover {
+      color: darkslategrey;
+    }
+
     .playfair-display-font {
       font-family: "Playfair Display", serif;
       font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .share-tech-mono-regular {
+      font-family: "Share Tech Mono", monospace;
       font-weight: 400;
       font-style: normal;
     }
@@ -31,15 +44,13 @@
 
 <body>
   <div id="main">
-    <p class="playfair-display-font" style="font-size: xx-large;">Ian Ridsdill</p>
-    <p class="playfair-display-font">Software Developer. Fredericton, NB. Canada.</p>
-    <p class="playfair-display-font">
-      <a href="https://ca.linkedin.com/in/ian-ridsdill" target="_blank">linkedin</a>
-      |
-      <a href="https://github.com/ianridsdill/ianridsdill.ca" target="_blank">github</a>
-      |
-      <a href="https://solscan.io/token/84kqep5DBSYXCev2AmTxVNeoTCSXW2vdPr7xpCif3DuE" target="_blank">IAN coin</a>
-      | <a href="Ian_Ridsdill_Resume-2023_09_15.pdf">PDF</a>
+    <p class="share-tech-mono-regular" style="font-size: xx-large;">ianridsdill.ca</p>
+    <p class="share-tech-mono-regular">Software Developer. Fredericton, NB. Canada.</p>
+    <p class="share-tech-mono-regular">
+      <a class="link" href="https://ca.linkedin.com/in/ian-ridsdill" target="_blank">linkedin</a> |
+      <a class="link" href="https://github.com/ianridsdill/ianridsdill.ca" target="_blank">github</a> |
+      <a class="link" href="https://solscan.io/token/84kqep5DBSYXCev2AmTxVNeoTCSXW2vdPr7xpCif3DuE" target="_blank">IAN coin</a> |
+      <a class="link" href="Ian_Ridsdill_Resume-2023_09_15.pdf">PDF</a>
     </p>
   </div>
 </body>
