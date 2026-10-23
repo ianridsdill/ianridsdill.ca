@@ -1,58 +1,163 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>ianridsdill.ca</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Share+Tech+Mono&display=swap" rel="stylesheet">
 
   <style>
+    :root {
+      color-scheme: dark;
+      --background: #141414;
+      --text: #f5f5f5;
+      --muted: #b8b8b8;
+      --line: #414141;
+      --accent: #f47b65;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      color: #ffffff;
-      background-color: #000000;
+      margin: 0;
+      color: var(--text);
+      background: var(--background);
+      font-family: "Share Tech Mono", monospace;
+      font-weight: 400;
+      letter-spacing: 0;
     }
 
     #main {
-      text-align: center;
+      width: min(100%, 1200px);
+      min-height: 100vh;
+      min-height: 100svh;
+      margin-inline: auto;
+      padding: 96px 64px 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
 
+    .identity {
+      padding-block: 48px 64px;
+      border-top: 1px solid var(--line);
+    }
+
+    h1 {
+      margin: 0 0 28px;
+      font-size: 88px;
+      font-weight: 400;
+      line-height: 1.15;
+    }
+
+    .bio {
+      max-width: 540px;
+      margin: 0;
+      color: var(--muted);
+      font-family: "Playfair Display", serif;
+      font-size: 24px;
+      line-height: 1.65;
+    }
+
+    .links {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
 
     .link {
-      color: #ffffff;
+      display: flex;
+      align-items: center;
+      min-height: 76px;
+      padding: 20px 24px;
+      color: var(--text);
+      font-size: 16px;
+      line-height: 1.5;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 5px;
+    }
+
+    .link + .link {
+      border-left: 1px solid var(--line);
     }
 
     .link:hover {
-      color: darkslategrey;
+      color: var(--accent);
+      background: #1e1e1e;
     }
 
-    .playfair-display-font {
-      font-family: "Playfair Display", serif;
-      font-optical-sizing: auto;
-      font-weight: 400;
-      font-style: normal;
+    .link:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: -4px;
     }
 
-    .share-tech-mono-regular {
-      font-family: "Share Tech Mono", monospace;
-      font-weight: 400;
-      font-style: normal;
+    @media (max-width: 900px) {
+      #main {
+        padding: 64px 40px 40px;
+      }
+
+      h1 {
+        font-size: 56px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      #main {
+        padding: 40px 24px;
+      }
+
+      .identity {
+        padding-block: 32px 40px;
+      }
+
+      h1 {
+        margin-bottom: 24px;
+        font-size: 32px;
+      }
+
+      .bio {
+        font-size: 20px;
+      }
+
+      .links {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .link {
+        min-height: 68px;
+        padding: 16px;
+      }
+
+      .link:nth-child(odd) {
+        border-left: 0;
+      }
+
+      .link:nth-child(n + 3) {
+        border-top: 1px solid var(--line);
+      }
     }
   </style>
 </head>
 
 <body>
-  <div id="main">
-    <p class="share-tech-mono-regular" style="font-size: xx-large;">ianridsdill.ca</p>
-    <p class="share-tech-mono-regular">Software Developer. Fredericton, NB. Canada.</p>
-    <p class="share-tech-mono-regular">
-      <a class="link" href="https://ca.linkedin.com/in/ian-ridsdill" target="_blank">linkedin</a> |
-      <a class="link" href="https://github.com/ianridsdill/ianridsdill.ca" target="_blank">github</a> |
-      <a class="link" href="https://solscan.io/token/84kqep5DBSYXCev2AmTxVNeoTCSXW2vdPr7xpCif3DuE" target="_blank">IAN coin</a> |
+  <main id="main">
+    <section class="identity" aria-labelledby="site-title">
+      <h1 id="site-title">ianridsdill.ca</h1>
+      <p class="bio">Software Developer. Fredericton, NB. Canada.</p>
+    </section>
+    <nav class="links" aria-label="Personal links">
+      <a class="link" href="https://ca.linkedin.com/in/ian-ridsdill" target="_blank" rel="noopener noreferrer">linkedin</a>
+      <a class="link" href="https://github.com/ianridsdill/ianridsdill.ca" target="_blank" rel="noopener noreferrer">github</a>
+      <a class="link" href="https://solscan.io/token/84kqep5DBSYXCev2AmTxVNeoTCSXW2vdPr7xpCif3DuE" target="_blank" rel="noopener noreferrer">IAN coin</a>
       <a class="link" href="Ian_Ridsdill_Resume-2023_09_15.pdf">PDF</a>
-    </p>
-  </div>
+    </nav>
+  </main>
 </body>
 
 </html>
